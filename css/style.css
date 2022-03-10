@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  background:url("../img/background.png")no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.blackbutton {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+ 
+}
+#main{
+    position: absolute;
+    width: 684px;
+    height: 780px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-bottom: 200px;
+    display: block;
+}
+canvas,svg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 110;
+  left: 0;
+  margin: auto;
+  display: block;
+}
+canvas{
+	z-index:1;
+}
+div{
+	position: relative;
+	margin:250px auto;
+}
+#lol{
+  width: 484px;
+  height: 484px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	display: block;
+}
+#lab{
+  
+  color: #ffffff;
+  width: 484px;
+  height: 100px;
+  text-align: center;
+	top: 150px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	display: block;
+}
+h1{
+  font-size: 55px;
+  padding-bottom: 60px;
+}
+h4{
+  margin: 0px;
+  color: whitesmoke;
+  position: relative;
+  top: 14px;
+  left: 30px;
+  font-family: Sonic;
+  font-size: 27px;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000,
+    0 -1px #000000;
+  color: #ffffff;
+  letter-spacing: 2px;
+  
+  
+}
+.switch {
+  position: relative;
+  top: 15px;
+  left: 40px;
+  display: block;
+  width: 60px;
+  height: 34px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E7AC70;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1px solid #ffffff;
+ 
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-image: url(../img/sonic_sound.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffffff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+  background: rgba(0,0,0,0)!important;
+}
+
+
+button{
+  color: black;
+  margin-top: 2vh;
+  background-color: #E7AC70;
+  border-radius: 0.3vh;
+  border: #E7AC70;
+  margin-left: 1vh;
+}
+button:disabled{
+  color: black;
+  margin-top: 2vh;
+  background-color: #fffefb;
+  border-radius: 0.5vh;
+  border: #ffffff;
+  margin-left: 1vh;
+}
+.btns{
+  display: flex;
+  justify-content: left;
+  bottom: 13em;
+}
+
+.no-border {
+  border: 0 !important;
+}
+
+.swal2-popup .swal2-styled:focus {
+  box-shadow: none !important;
+}
+.swal2-icon{
+  box-shadow: none;
+}
+#info{
+  height: 30px;
+  width: 110px;
+  font-size: 22px;
+  color: #ffffff;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000,
+    0 -1px #000000;
+  letter-spacing: 2px;
+  float: left;
+  transform: translate(0%,100%);
+}
+.allinfo{
+  width: 10em;
+  height: 5em;
+  float: left;
+  margin-left: 220px;
+}
+
+
+
